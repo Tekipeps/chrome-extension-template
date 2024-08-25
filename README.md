@@ -9,7 +9,7 @@ To get started, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/tekipeps/chrome-extension-react.git
+git clone https://github.com/tekipeps/chrome-extension-template.git
 ```
 
 2. Install dependencies:
