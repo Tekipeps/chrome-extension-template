@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Template",
+  "version": "1.0",
+  "description": "Chrome Extension Template",
+  "icons": {
+    "16": "icons/icon16.png",
+    "19": "icons/icon19.png",
+    "38": "icons/icon38.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
