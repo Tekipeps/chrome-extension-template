@@ -41,6 +41,9 @@ pnpm run build
 
 Contributions are welcome! If you find a bug or have a suggestion, please open an issue or submit a pull request.
 
+## Mentions
+I got the icons from [jbrudvik](https://github.com/jbrudvik/chrome-extension-icon-sizes)
+
 ## License
 
 This project is licensed under the MIT License.
