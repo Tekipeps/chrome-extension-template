@@ -4,8 +4,11 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = (env, argv) => {
   const mode = env.NODE_ENV || "production";
+  const isDevelopment = mode === "development";
+
   return {
     mode,
+    devtool: isDevelopment ? "inline-source-map" : false,
     entry: {
       popup: "./src/popup/index.tsx",
       content: "./src/content/index.tsx",

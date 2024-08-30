@@ -9,18 +9,18 @@ const Drawer: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-[10%] right-0 w-72 h-96 bg-white shadow-lg transition-transform duration-300 ease-in-out transform ${isOpen ? "translate-x-0" : "translate-x-full"} z-[999999999px]`}
+      className={`xt-fixed xt-top-[10%] xt-right-0 xt-w-72 xt-h-96 xt-bg-white xt-shadow-lg xt-transition-transform xt-duration-300 xt-ease-in-out xt-transform ${isOpen ? "xt-translate-x-0" : "xt-translate-x-full"} xt-z-[999999999px]`}
     >
       <button
         onClick={toggleDrawer}
-        className="absolute -left-8 top-1/2 -translate-y-1/2 bg-white p-2 rounded-l-md shadow-md"
+        className="xt-absolute xt--left-8 xt-top-1/2 xt--translate-y-1/2 xt-bg-white xt-p-2 xt-rounded-l-md xt-shadow-md"
       >
         {isOpen ? ">" : "<"}
       </button>
       {isOpen && (
-        <div className="p-4">
-          <h2 className="text-xl font-bold mb-4">Chrome Extension</h2>
-          <p className="text-gray-600">
+        <div className="xt-p-4">
+          <h2 className="xt-text-xl xt-font-bold xt-mb-4">Chrome Extension</h2>
+          <p className="xt-text-gray-600">
             This is just a starter template for a Chrome extension. You can
             customize it to suit your needs.
           </p>
